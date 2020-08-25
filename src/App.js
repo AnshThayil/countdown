@@ -232,7 +232,8 @@ class App extends React.Component{
 
           <Modal.Body>
             <ul>
-              <li>6 numbers will be chosen. It’s possible to choose how many large numbers you get, from 0 to 4. The remaining ones will be small numbers.</li>
+              <li>Players should split themselves into 2 teams. Both teams marticipate in each round.</li>
+              <li>6 numbers will be chosen. Teams will take turns choosing how many large numbers you get, from 0 to 4. The remaining ones will be small numbers.</li>
               <li>All cards within each category are drawn at random, with uniform probability.</li>
               <li>The target is a 3-digit number from 100 to 999, picked at random with uniform distribution.</li>
               <li>Your objective is to use the 6 numbers to get the target number within 30 seconds. It may be useful to have a pen and paper.</li>
@@ -240,7 +241,16 @@ class App extends React.Component{
               <li>You can use as many of the 6 input numbers as you want, but can only use each number once.</li>
               <li>All operations must result in integers.</li>
               <li>Once you choose how many big numbers and how many small numbers you would like, the numbers are chosen, then the target number is generated and a 30 second timer will begin.</li>
+              <li>Don't worry if you can't solve the problem within 30 seconds! Take as much time as you'd like.</li>
             </ul>
+            <h3>Scoring:</h3>
+              <p>Points are awarded to the contestant which gets closest to the target number, in the following manner:</p>
+              <ul>
+                <li>10 Points if the target was hit exactly.</li>
+                <li>7 points if the result is within a distance of 1 to 5 from the target.</li>
+                <li>5 points if the result is within a distance of 6 to 10 from the target.</li>
+                <li>0 otherwise.</li>
+              </ul>
           </Modal.Body>
         </Modal>
 
