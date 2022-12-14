@@ -232,7 +232,7 @@ class App extends React.Component{
 
           <Modal.Body>
             <ul>
-              <li>Players should split themselves into 2 teams. Both teams marticipate in each round.</li>
+              <li>Players should split themselves into 2 teams. Both teams participate in each round.</li>
               <li>6 numbers will be chosen. Teams will take turns choosing how many large numbers you get, from 0 to 4. The remaining ones will be small numbers.</li>
               <li>All cards within each category are drawn at random, with uniform probability.</li>
               <li>The target is a 3-digit number from 100 to 999, picked at random with uniform distribution.</li>
